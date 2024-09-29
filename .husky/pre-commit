@@ -1,0 +1,11 @@
+# . "$(dirname -- "$0")/_/husky.sh"
+# . "$(dirname -- "$0")/common.sh"
+
+# Unit Test
+# yarn test
+
+# Lint
+yarn lint
+
+# Commit Lint
+yarn commitlint --edit "$1"
